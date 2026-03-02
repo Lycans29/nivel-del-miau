@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Reseñas, rankings y comparativas de videojuegos.">
+        
+    <title>Nivel del Miau - Inicio</title>
+
+    <!-- Tailwind compilado -->
+    <link rel="stylesheet" href="../output.css">
+  
+    <link rel="icon" type="image/png" sizes="32x32" href="../Imagenes/favicon.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Press+Start+2P&display=swap" rel="stylesheet">
+  </head>
+    
+ 
+  <body class="bg-fondo text-texto font-texto min-w-[1024px]">
+    <!-- Menu -->
+    <header class="bg-verde">
+
+      <div class="mx-auto max-w-[1200px] px-8 py-3 flex items-center justify-between">
+
+        <div class="grid grid-cols-3 items-center">
+
+          <a href="index.html" class="flex items-center gap-3 no-underline" >
+            <img src="../Imagenes/logo.png" alt="Logo Nivel de Miau" class="w-14 h-14 object-contain">
+            <span class="font-titulos text-morado ">Nivel de Miau</span>
+          </a>
+
+          <nav class="justify-self-center">
+            <ul class="flex items-center gap-12">
+            <li><a href="../html/index.html" class="nav-link link-active">Inicio</a></li>
+            <li><a href="../html/resenas.html"  class="nav-link ">Reseñas</a></li>
+            <li><a href="../html/top.html"  class="nav-link">Top 5</a></li>
+            <li><a href="../html/acerca.html"  class="nav-link ">Acerca de</a></li>
+            </ul>
+        </nav>
+          <div class="justify-self-end"></div>
+        </div>    
+      </div>    
+    </header>
+
+    <main>
+           
+      <!-- CARRUSEL DESTACADOS (responsive) -->
+      <section class="mx-auto px-25 pt-8 relative">
+        <!-- Carrusel -->
+        <div id="carousel" class="flex gap-4 overflow-x-auto snap-x snap-mandatory scroll-smooth no-scrollbar relative z-10">
+          <!-- Imagen 1 -->
+          <article class="js-slide relative snap-center shrink-0 w-full h-[clamp(220px,50vw,500px)] rounded-2xl overflow-hidden border border-morado">
+            <img src="../Imagenes/helldivers.jpg" alt="Helldivers 2"class="absolute inset-0 w-full h-full object-cover" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+            <div class="absolute inset-0 flex items-center left-10 z-20 text-left">
+              <div>
+                <h2 class="font-titulos text-3xl text-morado drop-shadow-lg">Juegos</h2>
+                <h3 class="text-texto text-lg drop-shadow">Conoce las últimas reseñas</h3>
+              </div>
+            </div>
+          </article>
+
+          <!-- Imagen 2 -->
+          <article class="js-slide relative snap-center shrink-0 w-full h-[clamp(220px,50vw,500px)] rounded-2xl overflow-hidden border border-morado">
+            <img src="../Imagenes/minecraft.jpg" alt="Minecraft" class="absolute inset-0 w-full h-full object-cover" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+            <div class="absolute inset-0 flex items-center left-10 z-20 text-left">
+              <div>
+                <h2 class="font-titulos text-3xl text-verde drop-shadow-lg">Juegos</h2>
+                <h3 class="text-texto text-lg drop-shadow">Conoce las últimas reseñas</h3>
+              </div>
+            </div>
+          </article>
+
+          <!-- Imagen 3 -->
+          <article class="js-slide relative snap-center shrink-0 w-full h-[clamp(220px,50vw,500px)] rounded-2xl overflow-hidden border border-morado">
+            <img src="../Imagenes/eldenring.jpg" alt="Elden Ring" class="absolute inset-0 w-full h-full object-cover" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+            <div class="absolute inset-0 flex items-center left-10 z-20 text-left">
+              <div>
+                <h2 class="font-titulos text-3xl text-morado drop-shadow-lg">Juegos</h2>
+                <h3 class="text-texto text-lg drop-shadow">Conoce las últimas reseñas</h3>
+              </div>
+            </div>
+          </article>
+        </div>
+
+          <!-- Dots -->
+        <div class="mt-3 flex items-center justify-center gap-2 relative z-20">
+          <button class="dot" data-i="0" aria-label="Ir al slide 1"></button>
+          <button class="dot" data-i="1" aria-label="Ir al slide 2"></button>
+          <button class="dot" data-i="2" aria-label="Ir al slide 3"></button>
+        </div>
+      </section>
+
+     <!-- Reseñas -->
+      <section id="reseñas" class="mx-auto max-w-[1200px] px-6 py-12">
+        <h2 class="font-titulos  text-verde   mb-12 text-center  ">Explora, juega y reseña.Tu opinión importa.</h2>
+
+        <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+          
+          <!-- Carta 1 -->
+          <article class="bg-tarjetas rounded-xl shadow-lg border border-morado overflow-hidden flex flex-col">
+            <div class="p-6 flex flex-col flex-grow">
+              <img src="../Imagenes/Zelda.png" >
+              <h3 class="font-bold text-lg text-verde mb-2">The Legend of Zelda: Tears of the Kingdom</h3>
+              <p class="text-morado mb-2">★★★★★</p>
+              <p class="text-texto flex-grow">Sumérgete en el vasto mundo de Hyrule con "The Legend of Zelda: Tears of the Kingdom".</p>
+              <a href="../html/resena-zelda.html"
+                class="mt-4 inline-block bg-morado text-verde py-2 px-4 rounded text-center hover:bg-verde hover:text-morado transition">
+                Leer más
+              </a>
+
+            </div>
+          </article>
+
+          <!-- Carta 2 -->
+          <article class="bg-tarjetas rounded-xl shadow-lg border border-morado overflow-hidden flex flex-col">
+            <div class="p-6 flex flex-col flex-grow">
+              <img src="../Imagenes/Hogwarts.png" >
+              <h3 class="font-bold text-lg text-verde mb-2">Hogwarts Legacy</h3>
+              <p class="text-morado mb-2">★★★★☆</p>
+              <p class="text-texto flex-grow">Explora el mundo mágico de Harry Potter en "Hogwarts Legacy".</p>
+              <a href="../html/resena-hogwarts.html"
+                class="mt-4 inline-block bg-morado text-verde py-2 px-4 rounded text-center hover:bg-verde hover:text-morado transition">
+                Leer más
+              </a>
+            </div>
+          </article>
+
+          <!-- Carta 3 -->
+          <article class="bg-tarjetas rounded-xl shadow-lg border border-morado overflow-hidden flex flex-col">
+            <div class="p-6 flex flex-col flex-grow">
+              <img src="../Imagenes/Resident.png" >
+              <h3 class="font-bold text-lg text-verde mb-2">Resident Evil 4 Remake</h3>
+              <p class="text-morado mb-2">★★★★☆</p>
+              <p class="text-texto flex-grow">Revive el terror con el remake de "Resident Evil 4".</p>
+               <a href="../html/resena-resident.html"
+                class="mt-4 inline-block bg-morado text-verde py-2 px-4 rounded text-center hover:bg-verde hover:text-morado transition">
+                Leer más
+              </a>
+            </div>
+          </article>
+
+        </div>
+      </section>        
+    </main>
+
+    <footer class="mt-16">
+      <div class="bg-morado">
+        <div class="mx-auto max-w-[1200px] px-6 py-6 grid grid-cols-12 items-center gap-6">
+      
+          <!-- BLOQUE 1: LOGO -->
+          <div class="col-span-3 flex flex-col items-center text-black">
+            <img src="../Imagenes/logo.png" alt="Logo" class="w-16 h-16 object-contain mb-2">
+          </div>
+
+          <!-- BLOQUE 2: CONTACTOS (dos columnas internas con divisor) -->
+          <div class="col-span-5 grid grid-cols-[120px_1fr] items-start gap-4">
+            <!-- Columna izquierda: Ícono + Título -->
+            <div class="flex flex-col items-center text-black">
+              <div class="flex flex-col items-center text-black">
+                <!-- Ícono PNG -->
+                <img src="../Imagenes/correo-electronico.png" alt="Icono contacto" class="w-8 h-8 mb-1">
+
+                <!-- Título -->
+                <span class="font-semibold">Contactos</span>
+              </div>
+            </div>
+            <!-- Columna derecha: contenido -->
+            <div class="border-l-2 border-black pl-6 text-black">
+              <p>Teléfono: (000) 000-0000</p>
+              <p>Correo: ejemplo@correo.com</p>
+              <p>Dirección: Bogotá, Colombia</p>
+            </div>
+          </div>
+
+          <!-- BLOQUE 3: SÍGUENOS (igual estilo que Contactos) -->
+          <div class="col-span-2 grid grid-cols-[90px_1fr] items-start gap-4">
+            <!-- Columna izquierda: Ícono + Título -->
+            <div class="flex flex-col items-center text-black">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 mb-1"
+                  fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 1 0-7.7 7.8l8.7 8.2 8.8-8.2a5.5 5.5 0 0 0 0-7.8z"/>
+              </svg>
+              <span class="font-semibold">Síguenos</span>
+            </div>
+            <!-- Columna derecha: redes -->
+            <div class="border-l-2 border-black pl-4 text-black">
+            
+              <p>Instagram</p>
+              <p>Facebook</p>
+              <p>WhatsApp</p>
+            
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Franja verde inferior -->
+      <div class="bg-verde text-black text-center text-sm py-2">
+        © 2025 Reseñas Gamer - Todos los derechos reservados
+      </div>
+    </footer>
+
+    <script src="../script.js" defer ></script>
+  </body>
+</html>
